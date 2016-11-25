@@ -41,7 +41,7 @@ void setup()
 
 void loop()
 { 
-  static String C = "wait";
+  static String C = "wait\n";
   int j;
   uint16_t blocks;
   char buf[32]; 
@@ -53,7 +53,7 @@ void loop()
   if (Serial.available() > 0)
   {
     C = Serial.readString();
-    if (C == "go")
+    if (C == "go\n")
     {
       Serial.print("User command: " + C + "\n");
       //delay(500);
@@ -69,7 +69,7 @@ void loop()
 //{
 
 //} 
-  if(C == "go")
+  if(C == "go\n")
   {
      if (blocks)// If there are blocks detected, print them!
      {
@@ -91,31 +91,31 @@ void loop()
   {
     C = "wait";
   } */
-  else if(C == "wait")
+  else if(C == "wait\n")
   {
     //C = "hold";
     delay(250);
   }
-  else if(C == "light")
+  else if(C == "light\n")
   {
     Serial.print("not implemented\n");
-    C = "wait";
+    C = "wait\n";
     Serial.print("waiting\n");
     delay(250);
   }
-  else if(C == "help")
+  else if(C == "help\n")
   {
     Serial.print("command list:\ncommand: go = activate camera & start data stream\n");
     Serial.print("command: wait = stop data stream\n");
     Serial.print("command: light = toggle LED ring on or off\nLED ring cannot be toggled off if camera is active\r\n");
-    C = "wait";
+    C = "wait\n";
     Serial.print("waiting\n");
     delay(250);
   }
   else
   {
     Serial.print("bad command\n");
-    C = "wait";
+    C = "wait\n";
     Serial.print("waiting\n");
     delay(250);
   }
