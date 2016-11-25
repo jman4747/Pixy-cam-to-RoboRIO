@@ -42,6 +42,7 @@ void setup()
 void loop()
 { 
   static String C = "wait";
+  static String data = "wait";
   int j;
   uint16_t blocks;
   char buf[32]; 
@@ -107,7 +108,7 @@ void loop()
   {
     Serial.print("command list:\ncommand: go = activate camera & start data stream\n");
     Serial.print("command: wait = stop data stream\n");
-    Serial.print("command: light = toggle LED ring on or off\nLED ring cannot be toggled off if camera is active\r\n");
+    Serial.print("command: light = toggle LED ring on or off\nLEDs cannot be turned off if camera is active\r\n");
     C = "wait";
     Serial.print("waiting\n");
     delay(250);
