@@ -29,11 +29,11 @@ Lens: (will post after tests)
 And read this before buying a lens!: http://cmucam.org/projects/cmucam5/wiki/Can_I_replace_the_lens_on_Pixy
 
 To Do:
-Test new lens on practice field
-Test reflective tape targeting 
-Add pictures and diagrams of setup
-Write Arduino code to turn LED rings on and off
-Design electrical circuit to control LED rings with Arduino and power them from the robot's 12V supply
+Test new lens on practice field,
+Test reflective tape targeting, 
+Add pictures and diagrams of setup,
+Write Arduino code to turn LED rings on and off,
+Design electrical circuit to control LED rings with Arduino and power them from the robot's 12V supply,
 
 Post in this Chief Delphi thread if you need help: https://www.chiefdelphi.com/forums/showthread.php?threadid=152391
 
