@@ -13,6 +13,8 @@
 *.a
 *.la
 *.lo
+*.lvlibp
+*.llb
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -27,6 +29,10 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Metadata
+*.aliases
+*.lvlps
 
 # Debug files
 *.dSYM/
