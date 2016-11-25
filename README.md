@@ -1,8 +1,12 @@
 # Pixy-cam-to-RoboRIO
-A program for getting serial data from a Pixy to a RoboRIO via an Arduino. Made for use in the FIRST Robotics Competition.  I only know LabVIEW for FRC and enough C to get an Arduino working so the RoboRIO code is only for LabVIEW teams at the moment. 
+A program for getting serial data from a Pixy to a RoboRIO via an Arduino. Made for use in the FIRST Robotics Competition.
+
+I only know LabVIEW for FRC and enough C to get an Arduino working so the RoboRIO code is only for LabVIEW teams at the moment. 
 
 The purpose of this is to have a quick and simple solution to getting serial data from a CMUcam5 Pixy to a RoboRIO.  
 The code assumes you intend to track one target, presumably reflective tape, at 50 frames a second.
+
+Make sure to follow instructions at the CMUcam5 wiki to get your Arduino IDE set up properly: http://cmucam.org/projects/cmucam5/wiki/Hooking_up_Pixy_to_a_Microcontroller_(like_an_Arduino)
 
 The basic hardware setup requires an Arduino UNO R3, a USB male A to Male B cable, the CMUcam5 Pixy, and the ribbon cable included with it.
 
@@ -31,4 +35,8 @@ Add pictures and diagrams of setup
 Write Arduino code to turn LED rings on and off
 Design electrical circuit to control LED rings with Arduino and power them from the robot's 12V supply
 
-Also this will hopfuly become obsilete when somone creates a guide to get data from the pixy directly from its SPI port or even better gets the libpixyusb:https://github.com/charmedlabs/pixy working on the RoboRIO.
+Post in this Chief Delphi thread if you need help: https://www.chiefdelphi.com/forums/showthread.php?threadid=152391
+
+Also this will hopefully become obsolete when someone creates a guide to get data from the pixy directly from its SPI port or even better gets the libpixyusb:https://github.com/charmedlabs/pixy working on the RoboRIO.
+
+By Josh aka jman4747 on Chief Delphy of team "Reboot" 4080
