@@ -12,4 +12,4 @@ Lighting conditions: Bright (picture coming soon)
 
 Pixy lens: default lens (78deg FOV)
 
-Result: Farley stable tracking of target.  Would like to add 90mm & 80mm rings to further wash out white light.
+Result: Farley stable tracking of target.  Would like to add 60mm & 80mm rings to further wash out white light.
