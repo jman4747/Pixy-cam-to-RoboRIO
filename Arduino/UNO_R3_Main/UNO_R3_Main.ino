@@ -36,14 +36,14 @@ void setup()
   Serial.print("on\n");
   delay(1000);
   Serial.print("waiting\n");
-  String data = "wait";
 
 }
 
 void loop()
+<<<<<<< HEAD
 {
-  static String C = "wait";
-  String data;
+  static String C = "wait\n";
+  static String data;
   int j;
   uint16_t blocks;
   char buf[32];
@@ -55,15 +55,15 @@ void loop()
   if (Serial.available() > 0)
   {
     data = Serial.readString();
-    if (data == "light")
+    if (data == "light\n")
     {
-      if (C != "go" && LED == HIGH)
+      if (C != "go\n" && LED == HIGH)
       {
         digitalWrite(LED, LOW);
         Serial.print("light off\n"); //command reply string
         delay(500);
       }
-      else if (C != "go" && LED == LOW)
+      else if (C != "go\n" && LED == LOW)
       {
         digitalWrite(LED, HIGH);
         Serial.print("light on\n"); //command reply string
@@ -74,7 +74,7 @@ void loop()
     {
       C == data;
     }
-    if (C == "go")
+    if (C == "go\n")
     {
       digitalWrite(LED, HIGH);
       Serial.print("User command: go\nlight on\n"); //command reply string
@@ -83,11 +83,11 @@ void loop()
     else
     {
       digitalWrite(LED, LOW);
-      Serial.print("User command: " + C + "\n" + "light off\n"); //command reply string
+      Serial.print("User command: " + C + "light off\n"); //command reply string
     }
   }
 
-  if (C == "go")
+  if (C == "go\n")
   {
     if (blocks)// If there are blocks detected, print them!
     {
@@ -106,9 +106,8 @@ void loop()
     }
   }
 
-  else if (C == "wait")
+  else if (C == "wait\n")
   {
-
     delay(250);
   }
   /* else if(C == "light")
@@ -118,7 +117,7 @@ void loop()
      Serial.print("waiting\n");
      delay(250);
    }  */
-  else if (C == "help")
+  else if (C == "help\n")
   {
     Serial.print("command list:\ncommand: go = activate camera & start data stream\n");
     Serial.print("command: wait = stop data stream\n");
@@ -130,7 +129,7 @@ void loop()
   else
   {
     Serial.print("bad command\n");
-    C = "wait";
+    C = "wait\n";
     Serial.print("waiting\n");
     delay(250);
   }
