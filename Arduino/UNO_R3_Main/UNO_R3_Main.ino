@@ -55,20 +55,15 @@ void loop()
     C = Serial.readString();
     if (C == "go\n")
     {
-      Serial.print("User command: " + C + "\n");
-      //delay(500);
-      //Serial.print("Data start in 1 second!\n");
+      Serial.print("User command: " + C);
       delay(1000);
     }
     else
     {
-    Serial.print("User command: " + C + "\n");
+    Serial.print("User command: " + C);
     }
   }
-// else
-//{
-
-//} 
+  
   if(C == "go\n")
   {
      if (blocks)// If there are blocks detected, print them!
@@ -87,13 +82,9 @@ void loop()
          //}
       }  
   }
-/*  else if(C == "stop")
-  {
-    C = "wait";
-  } */
+  
   else if(C == "wait\n")
   {
-    //C = "hold";
     delay(250);
   }
   else if(C == "light\n")
