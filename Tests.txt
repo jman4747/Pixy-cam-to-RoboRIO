@@ -1,0 +1,15 @@
+Tests:
+
+Test 1 - Nov 26th, 2016:
+
+Pixy parameter file: Test_3.prm
+
+Location: full practice field
+
+Target: 2016 reflective tape target/green LED ring illumination (1x 120mm, 1x 100mm ring)
+
+Lighting conditions: Bright (picture coming soon)
+
+Pixy lens: default lens (78deg FOV)
+
+Result: Farley stable tracking of target.  Would like to add 90mm & 80mm rings to further wash out white light.
