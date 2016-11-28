@@ -1,0 +1,24 @@
+Test 1 @ Nov 28th, 2016:
+
+PUrpose:
+
+See difference in FOV for different lenses.
+
+
+lenses: 
+
+#1 8mm focal length aftermarket. Found here: http://www.ebay.com/itm/122198892672
+
+#2 Default pixy lens (2.8mm focal length)
+
+
+Location:
+
+Camera is 2ft off the floor and about 12ft from the goal. (This is not the height/distance for the tracking tests by the way) 
+ 
+
+Conclusion:
+
+The 8mm focal length lens seems to be the smallest FOV you would want to use.
+
+There are some lenses with FOV's in between the 8mm and default lens that would be optimal I think.  I will get the 4mm one and compare it to these next month.
